@@ -30,4 +30,9 @@ export class SearchComponent implements OnInit {
       });
   }
 
+  get tracks(): TrackData[]
+  {
+      return this.resources as TrackData[];
+  }
+
 }
